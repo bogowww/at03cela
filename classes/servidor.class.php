@@ -2,7 +2,6 @@
 require_once('usuario.class.php');
 
 Class Servidor extends Usuario{
-
     private $siape;
     private $dtAdmissao;
 

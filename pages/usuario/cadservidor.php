@@ -27,30 +27,37 @@
                     <div class="col-4"><label for="nome">nome:</label></div>
                     <div class="col-8"><input type="text" name="nome" id="nome" value="<?php if($acao == "editar") echo $conteudo["nome"]; ?>"></div>
                 </div>
+
                 <div class="row">
                     <div class="col-4"><label for="rg">Rg:</label></div>
                     <div class="col-8"><input type="text" name="rg" id="rg" value="<?php if($acao == "editar") echo $conteudo["rg"]; ?>"></div>
                 </div>
+
                 <div class="row">
                     <div class="col-4"><label for="login">Login:</label></div>
                     <div class="col-8"><input type="text" name="login" id="login" value="<?php if($acao == "editar") echo $conteudo["login"]; ?>"></div>
                 </div>
+
                 <div class="row">
                     <div class="col-4"><label for="senha">Senha:</label></div>
                     <div class="col-8"><input type="text" name="senha" id="senha" value="<?php if($acao == "editar") echo $conteudo["senha"]; ?>"></div>
                 </div>
+
                 <div class="row">
                     <div class="col-4"><label for="siape">Siape:</label></div>
                     <div class="col-8"><input type="text" name="siape" id="siape" value="<?php if($acao == "editar") echo $conteudo["siape"]; ?>"></div>
                 </div>
+
                 <div class="row">
                     <div class="col-4"><label for="dtAdm">Data de admissao:</label></div>
                     <div class="col-8"><input type="text" name="dtAdm" id="dtAdm" value="<?php if($acao == "editar") echo $conteudo["dtAdm"]; ?>"></div>
                 </div>
+
                 <div class="row">
                     <div class="col-4"></div>
                     <div class="col-8"><button type="submit" name="acao" id="acao" value="<?php if($acao == "editar") echo "editar"; else  echo "salvar";?>"><?php if($acao == "editar") echo "Editar"; else  echo "Salvar";?></button></div>
                 </div>
+                
             </form>
             </div>
         </div>

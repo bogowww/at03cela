@@ -2,7 +2,6 @@
     require_once('usuario.class.php');
 
     Class Aluno extends Usuario{
-
         private $matricula;
         private $turma;
 
@@ -49,9 +48,9 @@
     }
     }
 
-    $aluno = new Aluno(1,'Maria', '123456','guzica@gmail.com','1234567','324143', '3 agroecologia');
-    echo '<pre>';
-    var_dump($aluno);
-    echo '</pre>';
+    // $aluno = new Aluno(1,'Maria', '123456','guzica@gmail.com','1234567','324143', '3 agroecologia');
+    // echo '<pre>';
+    // var_dump($aluno);
+    // echo '</pre>';
 
 ?>

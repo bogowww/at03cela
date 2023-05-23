@@ -10,7 +10,7 @@
 </head>
 <body>
     <form action="" method="get">
-        <input type="text" class="form-control" name="filtro" id="filtro"><input type="submit" class="btn btn-success" value="Pesquisar">
+        <input type="text" class="form-control" name="filtro" id="filtro"><input type="submit" class="btn btn-success" value="pesquisar">
     </form>
     <?php echo "<table class='table'>"?>
         <legend>ALUNOS</legend>
@@ -39,7 +39,7 @@
                     <td>{$linha["senha"]}</td>
                     <td>{$linha["matricula"]}</td>
                     <td>{$linha["turma"]}</td>
-                    <td><a href='cad.php?acao=editar&id={$linha["id"]}&&tipo=1'>Edit</a></td>
+                    <td><a href='cadaluno.php?acao=editar&id={$linha["id"]}&&tipo=1'>Edit</a></td>
                     <td><a href='acao.php?acao=deletar&id={$linha["id"]}&&tipo=1'>Delete</a></td>
                 </tr>";
             }
@@ -75,14 +75,13 @@
                         <td>{$linha["senha"]}</td>
                         <td>{$linha["siape"]}</td>
                         <td>{$linha["dtAdmissao"]}</td>
-                        <td><a href='cad.php?acao=editar&id={$linha["id"]}&&tipo=2'>Edit</a></td>
+                        <td><a href='cadservidor.php?acao=editar&id={$linha["id"]}&&tipo=2'>Edit</a></td>
                         <td><a href='acao.php?acao=deletar&id={$linha["id"]}&&tipo=2'>Delete</a></td>
                     </tr>
                     ";
                 }
             ?>
-        
     </table>
-    <a href="cadservidor.php">CADASTRO</a>
+    <a href="cadservidor.php">Cadstrar</a>
 </body>
 </html>

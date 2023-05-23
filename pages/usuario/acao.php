@@ -18,7 +18,7 @@
                 header("location:index.php");
                 break;
             }else {
-                echo "<H1>ERRO MARCELA DE QUALIDADE: TIPO INVÁLIDO</H1>";
+                echo "tipo invalido???";
                 die();
             }
             
@@ -28,7 +28,7 @@
             if ($tipo == 1) {
                 $id = isset($_GET["id"]) ? $_GET["id"] : "0";
                 if ($id == 0) {
-                    echo "<H1>ERRO #DS49NF: ID INVÁLIDO</H1>";
+                    echo "id invalido";
                     die();
                 }
                 $form = formAluno();
@@ -43,8 +43,8 @@
                 header("location:index.php");
                 break;
             }else {
-                echo "<H1>ERRO MARCELA DE QUALIDADE: TIPO INVÁLIDO</H1>";
-                echo "<a href='index.php'>VOLTAR</a>";
+                echo "erro de tipo invalido??? que";
+                echo "<a href='index.php'>voltar</a>";
                 die();
             }
         case 'editar':
@@ -62,19 +62,19 @@
                 header("location:index.php");
                 break;
             }else {
-                echo "<H1>ERRO MARCELA DE QUALIDADE: TIPO INVÁLIDO</H1>";
+                echo "tipo invalido denovo FSDGBFGSDNV ";
                 die();
             }
     }
     function formAluno(){
-        $id = isset($_POST["id"]) ? $_POST["id"] : 0;
         $nome = isset($_POST["nome"]) ? $_POST["nome"] : "";
         $rg = isset($_POST["rg"]) ? $_POST["rg"] : "";
         $login = isset($_POST["login"]) ? $_POST["login"] : "";
         $senha = isset($_POST["senha"]) ? $_POST["senha"] : "";
         $matricula = isset($_POST["mat"]) ? $_POST["mat"] : "";
         $turma = isset($_POST["turma"]) ? $_POST["turma"] : "";
-        $form = array(  "nome" => "$nome", 
+        $form = array(  
+                        "nome" => "$nome", 
                         "rg" => "$rg", 
                         "login" => "$login", 
                         "senha" => "$senha", 
@@ -84,14 +84,14 @@
         return $form;
     }
     function formServidor(){
-        $id = isset($_POST["id"]) ? $_POST["id"] : 0;
         $nome = isset($_POST["nome"]) ? $_POST["nome"] : "";
         $rg = isset($_POST["rg"]) ? $_POST["rg"] : "";
         $login = isset($_POST["login"]) ? $_POST["login"] : "";
         $senha = isset($_POST["senha"]) ? $_POST["senha"] : "";
         $siape = isset($_POST["siape"]) ? $_POST["siape"] : "";
         $dtAdm = isset($_POST["dtAdm"]) ? $_POST["dtAdm"] : "";
-        $form = array(  "nome" => "$nome", 
+        $form = array(  
+                        "nome" => "$nome", 
                         "rg" => "$rg", 
                         "login" => "$login", 
                         "senha" => "$senha", 
